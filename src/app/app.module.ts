@@ -6,6 +6,8 @@ import { MaterialModule } from './modules/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './modules/app-routing.module';
+import { AuthGuard } from './services/AuthGuard.service';
+import { Auth } from './services/Auth.service';
 import { NewsComponent } from './components/news/news.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
@@ -24,7 +26,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGuard, Auth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
