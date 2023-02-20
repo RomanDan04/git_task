@@ -1,0 +1,32 @@
+nav{
+    background: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    padding: 15px 20px;
+    float: left;
+
+    color: white;
+    font-family: Arial, sans serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+
+    transition: all .3s;
+}
+
+li a:hover:not(.active) {
+    background-color: #333;
+}
+
+.active {
+    background-color: #2196f3;
+}
