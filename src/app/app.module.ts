@@ -8,12 +8,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { NewsComponent } from './components/news/news.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NewsComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
