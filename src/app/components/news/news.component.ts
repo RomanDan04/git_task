@@ -21,7 +21,7 @@ export class NewsComponent implements OnInit{
         this.requestExecuting = false
       })
     ).subscribe(res => {
-      console.log(res)
+      // console.log(res)
       this.newsList = res['articles']
     })
   }

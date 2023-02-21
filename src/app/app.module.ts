@@ -12,21 +12,29 @@ import { Auth } from './services/Auth.service';
 import { NewsComponent } from './components/news/news.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { LoginComponent } from './components/login/login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProfileComponent,
     NewsComponent,
-    HomeComponent
+    HomeComponent,
+    NotfoundComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [AuthGuard, Auth],
   bootstrap: [AppComponent]
