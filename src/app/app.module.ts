@@ -6,6 +6,7 @@ import { MaterialModule } from './modules/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './modules/app-routing.module';
+import { ProfileComponent } from './components/profile/profile.component';
 import { AuthGuard } from './services/AuthGuard.service';
 import { Auth } from './services/Auth.service';
 import { NewsComponent } from './components/news/news.component';
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     NewsComponent,
     HomeComponent,
     NotfoundComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
